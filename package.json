@@ -1,0 +1,31 @@
+{
+  "version": "1.0.0",
+  "appc-npm": {
+    "config": {
+      "ts.blurryview": "1.0"
+    },
+    "target": {
+      "alloy": "app/widgets/ts.blurryview"
+    },
+    "ignore": [
+      "package.json"
+    ]
+  },
+  "description": "Small wrapper to quickly display an avatar on a blurry background",
+  "author": "The Smiths [Matthias Benkort]",
+  "license": "Apache",
+  "name": "ts.blurryview",
+  "scripts": {
+    "postinstall": "node ./appc-npm"
+  },
+  "keywords": [
+    "alloy",
+    "alloy-widget",
+    "appc-npm",
+    "thesmiths"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thesmiths-widgets/ts.blurryview"
+  }
+}
