@@ -1,0 +1,93 @@
+<h1>Ti.Blur</h1>
+
+<p>The Ti.Blur project allows you to create a blur view using either the contents of a view or a provided image.</p>
+<p>Below is a gif showing the example app in action on both iOS and Android.  For a more complete walk through see the <a href="http://www.youtube.com/watch?v=mXU5dUkibls">video</a>.</p>
+<p><img alt="Animation" src="https://raw.githubusercontent.com/benbahrenburg/Ti.BlurView/master/Screenshots/ios_demo.gif" /> <img alt="Animation" src="https://raw.githubusercontent.com/benbahrenburg/Ti.BlurView/master/Screenshots/android-blur.gif" /></p>
+<h2>Before you start</h2>
+
+<ul>
+<li>This is an iOS and Android native module designed to work with Titanium SDK 3.2.0.GA</li>
+<li>This will only work with iOS <b>6</b> or greater and Android <b>4.2</b> or greater</li>
+<li>Before using this module you first need to install the package. If you need instructions on how to install a 3rd party module please read this installation guide.</li>
+</ul>
+<h2>Download the compiled release</h2>
+
+<ul>
+<li><a href="https://github.com/benbahrenburg/Ti.BlurView/tree/master/iOS/dist">iOS Dist</a></li>
+<li><a href="https://github.com/benbahrenburg/Ti.BlurView/tree/master/android/dist">Android Dist</a></li>
+<li>Install from gitTio    <a href="http://gitt.io/component/bencoding.blur"><img alt="gitTio" src="http://gitt.io/badge.png" /></a></li>
+</ul>
+<h2>Building from source?</h2>
+
+<p>If you are building from source you will need to do the following:</p>
+<p>Import the project into Xcode:</p>
+<ul>
+<li>Modify the titanium.xcconfig file with the path to your Titanium installation</li>
+<li>When running this project from Xcode you might run into a compile issue. If this is the case you will need to update the titanium.xcconfig to include your username. See the below for an example:</li>
+</ul>
+<p>~~~
+TITANIUM_SDK = /Users/benjamin/Library/Application Support/Titanium/mobilesdk/osx/$(TITANIUM_SDK_VERSION)
+~~~</p>
+<p>Import the project into Eclipse:</p>
+<ul>
+<li>Update the .classpath</li>
+<li>Update the build properties</li>
+</ul>
+<h2>Setup</h2>
+
+<ul>
+<li>Download the latest release from the releases folder ( or you can build it yourself )</li>
+<li>Install the ti.sq module. If you need help here is a "How To" <a href="https://wiki.appcelerator.org/display/guides/Configuring+Apps+to+Use+Modules">guide</a>. </li>
+<li>You can now use the module via the commonJS require method, example shown below.</li>
+</ul>
+<h2>Importing the module using require</h2>
+
+<pre><code>
+var mod = require('bencoding.blur');
+</code></pre>
+
+<h2>Module Features</h2>
+
+<h3>BasicBlurView</h3>
+
+<p>Platform Supported: <b>iOS</b> and <b>Android</b></p>
+<p>BasicBlurView provides a view implemented box blur. This results in an effect similar to what you see in iOS 7. The BasicBlurView object provides this blur functionality in a cross-platform way.</p>
+<p>To learn more about BasicBlurView please read the documentation:</p>
+<ul>
+<li><a href="https://github.com/benbahrenburg/Ti.BlurView/blob/master/android/documentation/BasicBlurView.md">Android</a></li>
+<li><a href="https://github.com/benbahrenburg/Ti.BlurView/blob/master/iOS/documentation/BasicBlurView.md">iOS</a></li>
+</ul>
+<h3>Blur View</h3>
+
+<p>Platform Supported: <b>iOS</b></p>
+<p>The BlurView provides a series of methods you can use to implement a blur effect similar to that used in iOS 7.  The BlurView is an extended Ti.UI.View that implements a Blur effect and allows you to implement background clipping.</p>
+<p>To learn more about the BlurView please read the documentation <a href="https://github.com/benbahrenburg/Ti.BlurView/blob/master/iOS/documentation/BlurView.md">here</a>.</p>
+<h3>Blur GPUImageView</h3>
+
+<p>Platform Supported: <b>iOS</b></p>
+<p>The GPUBlurImageView allows you to implement a blur effect similar to that used in iOS 7.  The GPUBlurImageView ImageView uses the <a href="https://github.com/BradLarson">Brad Larson</a> <a href="https://github.com/BradLarson/GPUImage">GPUImage</a> project render the blur effect quickly using little device resources.</p>
+<p>To learn more about the GPUBlurImageView please read the documentation <a href="https://github.com/benbahrenburg/Ti.BlurView/blob/master/iOS/documentation/GPUBlurImageView.md">here</a>.</p>
+<h2>Doing a blur without the view</h2>
+
+<p>Want to blur your images directly without using a View or ImageView?  The applyGPUBlurTo and applyBlurTo methods allow you to do this quickly and easily.</p>
+<p><b>Android</b></p>
+<p>Android documentation on how to apply a blur effect without using views, please read the documentation <a href="https://github.com/benbahrenburg/Ti.BlurView/blob/master/android/documentation/BlurImage.md">here</a>.</p>
+<p><b>iOS</b></p>
+<p>For how to apply a blur effect on iOS without using views, please read the documentation <a href="https://github.com/benbahrenburg/Ti.BlurView/blob/master/iOS/documentation/BlurImage.md">here</a>.</p>
+<h2>Module Properties</h2>
+
+<p>Platform Supported: <b>iOS</b></p>
+<p><b>IOS_BLUR</b> : Used in the blur type property of the GPUBlurImageView object.  Using a type of IOS_BLUR replicates the background blur used on iOS 7 in places like the control center.</p>
+<p><b>BOX_BLUR</b> : Used in the blur type property of the GPUBlurImageView object.  Using a type of BOX_BLUR implements a hardware-optimized, variable-radius box blur.</p>
+<p><b>GAUSSIAN_BLUR</b> : Used in the blur type property of the GPUBlurImageView object.  Using a type of GAUSSIAN_BLUR implements A hardware-optimized, variable-radius Gaussian blur.</p>
+<h3>Twitter</h3>
+
+<p>If you like the Titanium module,please consider following the <a href="http://www.twitter.com/bencoding">@bencoding Twitter</a> for updates.</p>
+<h3>Blog</h3>
+
+<p>For module updates, Titanium tutorials and more please check out my blog at <a href="http://benCoding.com">benCoding.Com</a>.</p>
+<h3>Attribution</h3>
+
+<p>The Blur method used in the Blur.View was inspired by the CoreImage tutorial by Evan Davis <a href="http://evandavis.me/blog/2013/2/13/getting-creative-with-calayer-masks">here</a>.</p>
+<p>The image used in all of the examples is by <a href="http://www.flickr.com/people/thenails1/">thenails</a> and is licenced under Creative Commons. This image is and associated licensing is available <a href="http://ny-pictures.com/nyc/photo/picture/42553/nostalgic_view_famous_hall">here</a>.</p>
+<p>The GPUImageView uses the <a href="https://github.com/BradLarson">Brad Larson</a> <a href="https://github.com/BradLarson/GPUImage">GPUImage</a> project render the blur.  I can't recommend this library enough.</p>

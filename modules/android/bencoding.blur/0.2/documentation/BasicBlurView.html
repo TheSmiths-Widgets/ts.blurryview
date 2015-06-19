@@ -1,0 +1,21 @@
+<h1>BasicBlurView - Android</h1>
+
+<p>Details on how to use the BasicBlurView.<br />
+</p>
+<h2>Creating a BasicBlurView</h2>
+
+<p>The BasicBlurView extends a traditional <a href="http://docs.appcelerator.com/titanium/latest/#!/api/Titanium.UI.View">Ti.UI.View</a> by providing two new properties, image and blurRadius.  Once these properties are set, the blur effect will be generated. </p>
+<p>The below listed properties are specific to the BasicBlurView.</p>
+<h3>Properties</h3>
+
+<p><b>image</b> : String/Titanium.Blob/Titanium.Filesystem.File</p>
+<p>Image to blur then display, defined using a local filesystem path, a File object, a remote URL, or a Blob object containing image data. Blob and File objects are not supported on Mobile Web.</p>
+<p><b>blurRadius</b> : Number</p>
+<p>The amount of blur radius that should be applied to the image</p>
+<p><b>Example</b>
+~~~
+    var vwTest = mod.createBasicBlurView({
+        width:Ti.UI.FILL, height:Ti.UI.FILL, blurRadius:10,
+        image: 'your-image-here.png'
+    });
+~~~</p>

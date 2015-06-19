@@ -1,0 +1,19 @@
+<h1>BasicBlurView - iOS</h1>
+
+<p>Details on how to use the BasicBlurView.  This is a convenance wrapper around the Box Blur functionality of GPUBlurImageView</p>
+<h2>Creating a BasicBlurView</h2>
+
+<p>The BasicBlurView supports a majority of the standard <a href="http://docs.appcelerator.com/titanium/latest/#!/api/Titanium.UI.ImageView">Ti.UI.ImageView</a> properties and provides one new blur related property, blurRadius.</p>
+<h3>Properties</h3>
+
+<p><b>image</b> : String/Titanium.Blob/Titanium.Filesystem.File</p>
+<p>Image to blur then display, defined using a local filesystem path, a File object, a remote URL, or a Blob object containing image data. Blob and File objects are not supported on Mobile Web.</p>
+<p><b>blurRadius</b> : Number</p>
+<p>The amount of blur radius that should be applied to the image</p>
+<p><b>Example</b>
+~~~
+    var vwTest = mod.createBasicBlurView({
+        width:Ti.UI.FILL, height:Ti.UI.FILL, blurRadius:5,
+        image: 'your-image-here.png'
+    });
+~~~</p>

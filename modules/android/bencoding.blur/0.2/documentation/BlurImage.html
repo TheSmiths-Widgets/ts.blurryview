@@ -1,0 +1,32 @@
+<h1>Image Blur - Android</h1>
+
+<p>How to use the Blur effects without using a view object.</p>
+<h2>Doing a blur without the view</h2>
+
+<p>If you need a greater level of control you can use the applyBlurTo method to perform the image operations yourself.</p>
+<h3>applyBlurTo</h3>
+
+<p>The applyBlurTo method takes a dictionary with the following fields.</p>
+<p><b>Fields</b></p>
+<p><b>blurRadius</b> (optional): float</p>
+<p>The blurRadius property sets how blurry the image is.  By default this value is 8.</p>
+<p><b>image</b> :  Url to image</p>
+<p>The image parameter is the url to an image that will be used in the blur process.
+<strong><em>This URL must be local to your app, remove images are not supported</em></strong></p>
+<p><b>Example - Blurred Background</b>
+<pre><code>
+var mod = require('bencoding.blur');</p>
+<p>var win = Ti.UI.createWindow({
+    backgroundColor:'white', title:"Image Blur Demo"
+});</p>
+<p>var imgblurredImage = mod.applyBlurTo({
+    image:'42553_m.jpg',
+    blurRadius:10
+});</p>
+<p>var vwTest = Ti.UI.createImageView({
+    width:Ti.UI.FILL, height:Ti.UI.FILL,
+    image:imgblurredImage
+});</p>
+<p>win.add(vwTest);</p>
+<p>win.open();</p>
+<p></code></pre></p>

@@ -49,7 +49,9 @@
 		<theme>default</theme>
 	</mobileweb>
 	<modules>
-	</modules>
+    <module platform="android" version="0.2">bencoding.blur</module>
+    <module platform="iphone" version="0.37">bencoding.blur</module>
+  </modules>
 	<deployment-targets>
 		<target device="android">true</target>
 		<target device="blackberry">true</target>

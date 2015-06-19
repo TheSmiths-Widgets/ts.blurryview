@@ -1,0 +1,53 @@
+<h1>GPU Blur ImageView</h1>
+
+<p>Details on how to use the GPU Blur ImageView.  The Blur ImageView uses the <a href="https://github.com/BradLarson/GPUImage">GPUImage</a> project by <a href="https://github.com/BradLarson">Brad Larson</a>.</p>
+<h2>Creating a GPU ImageView</h2>
+
+<p>The Ti.GPUBlurImageView supports a majority of the standard <a href="http://docs.appcelerator.com/titanium/latest/#!/api/Titanium.UI.ImageView">Ti.UI.ImageView</a> properties.  The below listed properties are specific to the GPUBlurImageView.</p>
+<h3>Properties</h3>
+
+<p><b>blur</b> : Dictionary
+A dictionry containing the blur options
+<em>type : the type of GPU Blur effect to be used. Supported; IOS_BLUR, BOX_BLUR, GAUSSIAN_BLUR
+</em> radiusInPixels : amount of blur that should be applied</p>
+<p>Optional options for IOS_BLUR:</p>
+<ul>
+<li>saturation : Saturation ranges from 0.0 (fully desaturated) to 2.0 (max saturation), with 0.8 as the normal level</li>
+<li>downsampling : The degree to which to downsample, then upsample the incoming image to minimize computations within the Gaussian blur, with a default of 4.0.</li>
+</ul>
+<p>Optional options for BOX_BLUR and GAUSSIAN_BLUR</p>
+<ul>
+<li>radiusAsFractionOfImageWidth :  Setting these properties will allow the blur radius to scale with the size of the image</li>
+<li>radiusAsFractionOfImageHeight :  Setting these properties will allow the blur radius to scale with the size of the image</li>
+<li>passes : The number of times to sequentially blur the incoming image. The more passes, the slower the filter.</li>
+</ul>
+<p><b>iOS Blur Example</b>
+~~~
+var imgView = mod.createGPUBlurImageView({
+    height:Ti.UI.FILL, width:Ti.UI.FILL,
+    image:"42553_m.jpg",
+    blur:{
+        type:mod.IOS_BLUR, radiusInPixels:1
+    }     <br />
+});
+~~~</p>
+<p><b>Box Blur Example</b>
+~~~
+var imgView = mod.createGPUBlurImageView({
+    height:Ti.UI.FILL, width:Ti.UI.FILL,
+    image:"42553_m.jpg",
+    blur:{
+        type:mod.BOX_BLUR, radiusInPixels:5
+    }     <br />
+});
+~~~</p>
+<p><b>Gaussian Blur Example</b>
+~~~
+var imgView = mod.createGPUBlurImageView({
+    height:Ti.UI.FILL, width:Ti.UI.FILL,
+    image:"42553_m.jpg",
+    blur:{
+        type:mod.GAUSSIAN_BLUR, radiusInPixels:2.5
+    }     <br />
+});
+~~~</p>
