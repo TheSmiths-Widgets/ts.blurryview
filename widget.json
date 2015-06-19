@@ -1,13 +1,16 @@
 {
 	"id": "ts.blurryview",
 	"name": "ts.blurryview",
-	"description" : "",
-	"author": "",
+	"description" : "Small wrapper to quickly display an avatar on a blurry background",
+	"author": "The Smiths [Matthias Benkort]",
 	"version": "1.0",
 	"copyright":"Copyright (c) 2012",
 	"license":"Public Domain",
 	"min-alloy-version": "1.0",
 	"min-titanium-version":"2.1",
 	"tags":"",
-	"platforms":"android,blackberry,ios,mobileweb"
+	"platforms":"android,blackberry,ios,mobileweb",
+    "modules": {
+        "bencoding.blur": "^0.2"
+    }
 }

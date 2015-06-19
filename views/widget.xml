@@ -1,3 +1,9 @@
 <Alloy>
-	<Label>I'm the default widget</Label>
+    <View id="index">
+        <ImageView id="foregroundImage" />
+        <View id="titles">
+            <Label id="title" />
+            <Label id="subtitle" />
+        </View>
+    </View>
 </Alloy>
