@@ -52,7 +52,7 @@ module.exports = function (gulp, plugins) {
     });
 
     gulp.task('start:emulator', ['ensure:android'], function (done) {
-        plugins.exec('emulator -avd test -no-audio -no-window &');
+        plugins.exec('emulator -avd test -no-audio &');
 
         /* Wait for the emulator to start */
         var waitForEmulatorToStart = function (nbTries, maxTries, callback) {
