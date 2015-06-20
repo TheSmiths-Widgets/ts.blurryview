@@ -7,7 +7,7 @@ env:
         - PLATFORM="ios"
         - PLATFORM="android" ANDROID_VERSION="19"
     global:
-        - secure "nMIZyirOng/AwgTunfHV22G8EAjzDadgaiwIr9ZdIFJ3f/3MTTIZx8CzQcupXbkR3+pbfmNt3H7fKG3kQYsAP4Cei5M9UOGM8kyIFCWdP/pv18HgKsTi4VpOLYW48/6AZHS6ZDN+0uSMjN26jyyIJ34zBUzsCaYnuSFGSqH49VB8yG4xp5Hz/o3asW35sQJViZM0Sv9MyoyYdG15r9tM4fQ1gf/vQXbFvx1l/U1VCxkRJalCZ1+io/6NbUt1LoPI2v8XcdsevSYcy3oKhT8jsdg1ydAzGsLegswGzRTJhVhoCjmXWMHRaBEnnwPjYqre1upPAxb4+ZXnVJkmvtswRBA4rKNI7A2Lph514d/PaFLGDNlUQz1PjN5msTKYZOHNVzdJhbiUUDts61bT6n6GVTuqjdJVeJ8vS4HU8IYg8F4e15DT2X/5niYZs+3FLvShkUELp22iqDbNtKk1YNq+VIL6d/UgLYvSiXy3MmPUEOZLM1FtXFYJCak4kGh9psx4zVZxX+UT2LK6XRE9s+yU7T4Bjhn2ZiNVxIuv9mUOb+kW+kj2PKaoo+wlLcLARI2CR8GWrDTClA38QlvqdzqrPLiUHHkWCR2geqZFrmtEzg2i7wkKgxIAyZTQH1x7bdAzV1oqbztp8rMuOHWr72NDfvORMBUw12+ig4L9h4FlQGQ="
+        - secure: nMIZyirOng/AwgTunfHV22G8EAjzDadgaiwIr9ZdIFJ3f/3MTTIZx8CzQcupXbkR3+pbfmNt3H7fKG3kQYsAP4Cei5M9UOGM8kyIFCWdP/pv18HgKsTi4VpOLYW48/6AZHS6ZDN+0uSMjN26jyyIJ34zBUzsCaYnuSFGSqH49VB8yG4xp5Hz/o3asW35sQJViZM0Sv9MyoyYdG15r9tM4fQ1gf/vQXbFvx1l/U1VCxkRJalCZ1+io/6NbUt1LoPI2v8XcdsevSYcy3oKhT8jsdg1ydAzGsLegswGzRTJhVhoCjmXWMHRaBEnnwPjYqre1upPAxb4+ZXnVJkmvtswRBA4rKNI7A2Lph514d/PaFLGDNlUQz1PjN5msTKYZOHNVzdJhbiUUDts61bT6n6GVTuqjdJVeJ8vS4HU8IYg8F4e15DT2X/5niYZs+3FLvShkUELp22iqDbNtKk1YNq+VIL6d/UgLYvSiXy3MmPUEOZLM1FtXFYJCak4kGh9psx4zVZxX+UT2LK6XRE9s+yU7T4Bjhn2ZiNVxIuv9mUOb+kW+kj2PKaoo+wlLcLARI2CR8GWrDTClA38QlvqdzqrPLiUHHkWCR2geqZFrmtEzg2i7wkKgxIAyZTQH1x7bdAzV1oqbztp8rMuOHWr72NDfvORMBUw12+ig4L9h4FlQGQ=
 
 matrix:
     fast_finish: true
@@ -20,7 +20,7 @@ before_install:
     - export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
 
 install:
-    - npm install -g titanium alloy tishadow gulp ktorz/ticalabash
+    - npm install -g titanium alloy tishadow gulp ticalabash
     - npm install
 
     - titanium login travisci@appcelerator.com travisci
