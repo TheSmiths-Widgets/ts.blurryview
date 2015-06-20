@@ -1,4 +1,4 @@
-# Blurry View [![Alloy](http://www-static.appcelerator.com/badges/alloy-git-badge-sq.png)](http://www.appcelerator.com/alloy/) [![License](http://img.shields.io/badge/license-Apache%202.0-blue.svg?style=flat)](http://choosealicense.com/licenses/apache-2.0/)
+# Blurry View [![Alloy](http://www-static.appcelerator.com/badges/alloy-git-badge-sq.png)](http://www.appcelerator.com/alloy/) [![License](http://img.shields.io/badge/license-Apache%202.0-blue.svg?style=flat)](http://choosealicense.com/licenses/apache-2.0/)[![Travis](https://api.travis-ci.org/TheSmiths-Widgets/ts.blurryview.svg)](https://travis-ci.org/TheSmiths-Widgets/ts.blurryview/)
 
 This widget for the [Appcelerator](http://www.appcelerator.com) Titanium Alloy MVC framework
 provides an easy way to display a picture on the top of a blurry background. 
@@ -85,14 +85,15 @@ Here is the list of available options:
 - `[borderRadius] <Number>`: The border radius of the foreground image
 - `[blurRadius] <Number>`: The intensity of the blur effect
 
-## Changelog
-* 1.0 First version
-
 ## Dependencies
 * [bencoding.blur](https://github.com/benbahrenburg/Ti.BlurView)
 
+## Changelog
+* 1.0 First version
+
 [![wearesmiths](http://wearesmiths.com/media/logoGitHub.png)](http://wearesmiths.com)
 
-Appcelerator, Appcelerator Titanium and associated marks and logos are trademarks of Appcelerator, Inc.  
+<p align="center">
 Titanium is Copyright (c) 2008-2015 by Appcelerator, Inc. All Rights Reserved.  
 Titanium is licensed under the Apache Public License (Version 2).  
+</p>
