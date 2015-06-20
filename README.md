@@ -1,4 +1,4 @@
-# Blurry View [![Titanium](http://www-static.appcelerator.com/badges/titanium-git-badge-sq.png)](http://www.appcelerator.com/titanium/) [![Alloy](http://www-static.appcelerator.com/badges/alloy-git-badge-sq.png)](http://www.appcelerator.com/alloy/) [![License](http://img.shields.io/badge/license-Apache%202.0-blue.svg?style=flat)](http://choosealicense.com/licenses/apache-2.0/)
+# Blurry View [![Titanium](http://www-static.appcelerator.com/badges/titanium-git-badge-sq.png)](http://www.appcelerator.com/titanium/) [![Alloy](http://www-static.appcelerator.com/badges/alloy-git-badge-sq.png)](http://www.appcelerator.com/alloy/) [![License](http://img.shields.io/badge/license-Apache%202.0-blue.svg?style=flat)](http://choosealicense.com/licenses/apache-2.0/)[![Travis](https://api.travis-ci.org/TheSmiths-Widgets/ts.blurryview.svg)](https://travis-ci.org/TheSmiths-Widgets/ts.blurryview/)
 
 This widget for the [Appcelerator](http://www.appcelerator.com) Titanium Alloy MVC framework
 provides an easy way to display a picture on the top of a blurry background. 
