@@ -4,7 +4,7 @@ This widget for the [Appcelerator](http://www.appcelerator.com) Titanium Alloy M
 provides an easy way to display a picture on the top of a blurry background. 
 
 ## Preview
-![preview](https://github.com/thesmiths-widgets/ts.blurryview/blob/doc/images/preview.png)
+![preview](https://raw.githubusercontent.com/thesmiths-widgets/ts.blurryview/doc/images/preview.png)
 
 ## Quick Start
 
