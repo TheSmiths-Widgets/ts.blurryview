@@ -2,7 +2,6 @@ language: objective-c
 branches:
     only:
         - test
-        
 env:
     matrix:
         - PLATFORM="ios"
